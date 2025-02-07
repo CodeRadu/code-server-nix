@@ -1,6 +1,6 @@
 FROM docker.io/nixos/nix
 
-RUN nix-env -iA nixpkgs.code-server nixpkgs.gnused nixpkgs.git nixpkgs.gh
+RUN nix-env -iA nixpkgs.code-server nixpkgs.gnused nixpkgs.git nixpkgs.gh nixpkgs.direnv
 
 COPY start.sh /start.sh
 
