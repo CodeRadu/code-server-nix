@@ -1,4 +1,4 @@
-FROM nixos/nix
+FROM docker.io/nixos/nix
 
 RUN nix-env -iA nixpkgs.code-server nixpkgs.gnused nixpkgs.git nixpkgs.gh
 
