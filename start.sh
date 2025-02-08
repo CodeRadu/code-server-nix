@@ -17,4 +17,8 @@ if [[ ";${PROMPT_COMMAND[*]:-};" != *";_direnv_hook;"* ]]; then
 fi
 EOF
 
+cat > /root/.config/code-server/config.yaml <<EOF
+bind-addr: 0.0.0.0:${PORT}
+EOF
+
 exec code-server
